@@ -12,92 +12,91 @@ public class Contenido {
 
     static String[] parrafos = {
             "- MACHU PICCHU\n" +
-                    "* Ollanataytambo\n" +
-                    "* Aguas Calientes\n" +
-                    "* El Templo del Sol o Koricancha\n" +
-                    "* Santuario de Sacsayhuaman\n" +
-                    "* Puca Pucara centro de control militar.\n" +
-                    "* Tambomachay. centro adoratorio del elemento Agua.\n" +
-                    "* Qenqo. centro místico muy importante de la época Inca. \n" +
-                    "* Valle Sagrado",
+                    "*  Ollanataytambo\n" +
+                    "*  Aguas Calientes\n" +
+                    "*  El Templo del Sol o Koricancha\n" +
+                    "*  Santuario de Sacsayhuaman\n" +
+                    "*  Puca Pucara centro de control militar.\n" +
+                    "*  Tambomachay. centro adoratorio del elemento Agua.\n" +
+                    "*  Qenqo. centro místico muy importante de la época Inca. \n" +
+                    "*  Valle Sagrado",
 
             "- CUSCO/CITY TOUR\n" +
-                    "* El Templo del Sol o Koricancha.\n" +
-                    "* Santuario de Sacsayhuaman.\n" +
-                    "* Santuario de Machupicchu\n" +
-                    "* Aguas Calientes – Cusco (Servicio de tren local" +
-                    "* Cusco  Chilca (Montaña de colores)\n" +
-                    "* Tambomachay.- centro adoratorio del elemento Agua.\n" +
-                    "* Qenqo. centro místico muy importante de la época Inca. \n" +
-                    "* Valle Sagrado",
+                    "*  El Templo del Sol o Koricancha.\n" +
+                    "*  Santuario de Sacsayhuaman.\n" +
+                    "*  Santuario de Machupicchu\n" +
+                    "*  Aguas Calientes – Cusco (Servicio de tren local" +
+                    "*  Cusco  Chilca (Montaña de colores)\n" +
+                    "*  Tambomachay.- centro adoratorio del elemento Agua.\n" +
+                    "*  Qenqo. centro místico muy importante de la época Inca. \n" +
+                    "*  Valle Sagrado",
 
             "- Uros y Taquile\n" +
-                    "* Aguas Calientes – Machu Picchu - Aguas Calientes.\n" +
-                    "* El Templo del Sol o Koricancha.\n" +
-                    "* Santuario de Machupicchu\n" +
-                    "* Santuario de Sacsayhuaman.\n" +
-                    "* Cusco  Chilca (Montaña de colores)\n" +
-                    "* Tambomachay centro adoratorio del elemento Agua.\n" +
-                    "* Qenqo.- centro místico muy importante de la época Inca. \n" +
-                    "* Valle Sagrado",
+                    "*  Aguas Calientes – Machu Picchu - Aguas Calientes.\n" +
+                    "*  El Templo del Sol o Koricancha.\n" +
+                    "*  Santuario de Machupicchu\n" +
+                    "*  Santuario de Sacsayhuaman.\n" +
+                    "*  Cusco  Chilca (Montaña de colores)\n" +
+                    "*  Tambomachay centro adoratorio del elemento Agua.\n" +
+                    "*  Qenqo.- centro místico muy importante de la época Inca. \n" +
+                    "*  Valle Sagrado",
 
             "- Machu Picchu - Extranjero\n" +
-                    "* El Templo del Sol o Koricancha.\n" +
-                    "* Santuario de Sacsayhuaman.\n" +
-                    "* Santuario de Machupicchu\n" +
-                    "* Aguas Calientes  Cusco (Servicio de tren local" +
-                    "* Cusco  Chilca (Montaña de colores)\n" +
-                    "* Tambomachay. centro adoratorio del elemento Agua.\n" +
-                    "* Qenqo.- centro místico muy importante de la época Inca. \n" +
-                    "* Valle Sagrado",
+                    "*  El Templo del Sol o Koricancha.\n" +
+                    "*  Santuario de Sacsayhuaman.\n" +
+                    "*  Santuario de Machupicchu\n" +
+                    "*  Aguas Calientes  Cusco (Servicio de tren local" +
+                    "*  Cusco  Chilca (Montaña de colores)\n" +
+                    "*  Tambomachay. centro adoratorio del elemento Agua.\n" +
+                    "*  Qenqo.- centro místico muy importante de la época Inca. \n" +
+                    "*  Valle Sagrado",
 
             "- Cusco/Clasico\n" +
-                    "* El Templo del Sol o Koricancha.\n" +
-                    "* Maras y Moray.\n" +
-                    "* Montaña de Colores\n" +
-                    "* Aguas Calientes – Cusco (Servicio de tren local" +
-                    "* Cusco – Chilca (Montaña de colores)\n" +
-                    "* Tambomachay.- centro adoratorio del elemento Agua.\n" +
-                    "* Qenqo.- centro místico muy importante de la época Inca. \n" +
-                    "* Valle Sagrado",
+                    "*  El Templo del Sol o Koricancha.\n" +
+                    "*  Maras y Moray.\n" +
+                    "*  Montaña de Colores\n" +
+                    "*  Aguas Calientes – Cusco (Servicio de tren local" +
+                    "*  Cusco – Chilca (Montaña de colores)\n" +
+                    "*  Tambomachay.- centro adoratorio del elemento Agua.\n" +
+                    "*  Qenqo.- centro místico muy importante de la época Inca. \n" +
+                    "*  Valle Sagrado",
 
     };
 
     static String[] detalles = {
 
-            "Precio: S/665.00 \n " +
-                    "Duración: 5 dias - 4 noches \n " +
-                    "Mañanas: 09:00 a 12:00 \n " +
-                    "Tardes: 14:00 a 17:00 \n" +
-                    " Incluye: Movilidad y Guiado, Almuerzo",
+
+            "DURACION  : 5 dias - 4 noches \n " +
+                    "TRANSPORTE: entradas y guiado en servicio compartido (Ingles/ Español) \n " +
+                    "TRASLADO  : entrada y salida\n"+
+                    "\n"+
+                    "       PRECIO: S/665.00",
 
 
-            "Precio: S/792.00 \n"+
-                    "Duración: 7 horas - 6 noches\n" +
-                    "Mañanas: 09:00 a 13:00\n" +
-                    "Tardes: 14:00 a 18:00\n"+
-                    " Incluye: Movilidad y Guiado, Almuerzo",
+            "DURACION  : 5 dias - 2 noches \n " +
+                    "TRANSPORTE: entradas y guiado en servicio compartido (Ingles/ Español) \n " +
+                    "TRASLADO  : entrada y Almuerzo\n"+
+                    "\n"+
+                    "       PRECIO: S/792.00",
 
 
-            "Precio: S/745.00 \n"+
-                    "Duración: 5 DÍAS\n" +
-                    "Salida: 8:00 AM\n" +
-                    "Retorno: 16:30 PM\n" +
-                    "Incluye: Movilidad y Guiado, (1) Almuerzo",
+            "DURACION  : 5 dias - 4 noches \n " +
+                    "TRANSPORTE: entradas y guiado en servicio compartido (Ingles/ Español) \n " +
+                    "TRASLADO  : entrada y salida \n"+
+                    "\n"+
+                    "       PRECIO: S/945.00",
 
-            "Precio: S/945.00 \n"+
-                    "Duración: 5 DÍAS\n" +
-                    "Salida: 07:30 AM\n" +
-                    "Retorno: 05:30 PM\n" +
-                    "Incluye: Hotel, Movilidad,  Guiado y Almuerzo",
+            "DURACION  : 6 dias \n " +
+                    "TRANSPORTE: entradas y guiado en servicio compartido (Ingles/ Español) \n " +
+                    "TRASLADO  : entrada y salida\n"+
+                    "\n"+
+                    "PRECIO: S/745.00",
 
-            "Precio: S/965.00 \n"+
-                    "Duración: 6 DÍAS\n" +
-                    "Salida: 13:30 PM\n" +
-                    "Retorno: 17:00 PM\n" +
-                    "Incluye: Movilidad, Guiado, Alimentación Completa\n" +
-                    " (1 Almuerzo, 1 Cena, 1 Desayuno, \n" +
-                    "1 Refrigerio preparado con energía volcánica)",
+            "DURACION  : 7 dias \n " +
+                    "TRANSPORTE: entradas y guiado en servicio compartido (Ingles/ Español) \n " +
+                    "TRASLADO  : entrada y salida\n"+
+                    "\n"+
+                    "       PRECIO: S/965.00",
 
 
     };
