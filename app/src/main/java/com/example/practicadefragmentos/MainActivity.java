@@ -1,53 +1,60 @@
 package com.example.practicadefragmentos;
 
 import android.net.Uri;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements ListaPaquetesFragments.OnFragmentInteractionListener, DetallePaquetesFragments.OnFragmentInteractionListener, ComunicaFragments{
+public class MainActivity extends AppCompatActivity implements TituloFragment.OnTituloSelectedListener{
 
-    ListaPaquetesFragments listaPaquetesFragments;
-    DetallePaquetesFragments detallePaquetesFragments;
+    private final int[] BOTONESILUMINADOS={R.drawable.paquete1, R.drawable.paquete2, R.drawable.paquete3, R.drawable.paquete4, R.drawable.paquete5,
+            R.drawable.fondo};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if(findViewById(R.id.contenedorFragment)!=null){
-            Utilidades.portatrait=true;
-            if(savedInstanceState !=null){
+        if (findViewById(R.id.fragment_container) !=null){
+            if (savedInstanceState !=null){
                 return;
             }
+            TituloFragment tituloFragment = new TituloFragment();
 
-            listaPaquetesFragments = new ListaPaquetesFragments();
+            tituloFragment.setArguments(getIntent().getExtras());
 
-            getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment,listaPaquetesFragments).commit();
-        }else{
-            Utilidades.portatrait=false;
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container,
+                            tituloFragment)
+                    .commit();
         }
     }
 
     @Override
-    public void onFragmentInteraction(Uri uri){
+    public void onTituloSelected(int position) {
+        ParrafoFragment parrafoFragment = (ParrafoFragment)getSupportFragmentManager().findFragmentById(R.id.fgm_parrafo);
 
-    }
+        if(parrafoFragment != null){
+            parrafoFragment.updateParrafoView(position);
 
-    @Override
-    public void enviarPaquete(PaquetesEntidad paquete){
-        detallePaquetesFragments=(DetallePaquetesFragments) this.getSupportFragmentManager().findFragmentById(R.id.fragDetalle);
+        } else {
+            ParrafoFragment parrafoFragment1 = new ParrafoFragment();
+            Bundle args = new Bundle();
+            args.putInt(ParrafoFragment.ARG_POSITION,position);
 
-        if(detallePaquetesFragments!=null && findViewById(R.id.contenedorFragment)==null){
-            detallePaquetesFragments.asignarInformacion(paquete);
-        }else{
-            detallePaquetesFragments = new DetallePaquetesFragments();
-            Bundle bundleEnvio = new Bundle();
-            bundleEnvio.putSerializable("objeto",paquete);
-            detallePaquetesFragments.setArguments(bundleEnvio);
+            parrafoFragment1.setArguments(args);
 
-            getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment,
-                    detallePaquetesFragments).addToBackStack(null).commit();
+            FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+
+
+            fragmentTransaction.replace(R.id.fragment_container,parrafoFragment1);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
 
         }
     }
+
+
 }
